@@ -12,6 +12,7 @@ form.addEventListener("submit", function (e) {
 //1° aggiungo in memoria al click di save
 saveButton.addEventListener("click", function () {
   localStorage.setItem("full-name", "wendy de luca");
+  inputText.value = ""; // svuoto il campo
 });
 //2° svuoto l'input al click di cancel
 cancelButton.addEventListener("click", function () {
@@ -21,6 +22,3 @@ cancelButton.addEventListener("click", function () {
 cancelButton.addEventListener("click", function () {
   localStorage.removeItem("full-name");
 });
-
-// mostro al caricamento il valore salvato in precedenza
-localStorage.getItem("full-name");

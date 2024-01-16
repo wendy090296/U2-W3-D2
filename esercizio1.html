@@ -15,23 +15,23 @@
     <main>
       <h1 class="text-center mb-5">Web Storage</h1>
       <form>
-        <div class="container d-flex flex-row justify-content-center">
+        <div class="container">
           <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-12 col-md-6">
+              <h4 id="saved-value"></h4>
               <input
                 type="text"
                 class="form-control text-center"
                 placeholder="Write your full name "
-                aria-label="First name"
                 id="full-name"
               />
             </div>
-            <button type="submit" class="btn btn-primary my-4" id="save">
-              SAVE
-            </button>
-            <button type="submit" class="btn btn-success" id="cancel">
-              CANCEL
-            </button>
+            <div class="d-flex justify-content-center my-3">
+              <button class="btn btn-primary" id="save">SAVE</button>
+              <button class="btn btn-warning text-white mx-2" id="cancel">
+                CANCEL
+              </button>
+            </div>
           </div>
         </div>
       </form>
@@ -42,6 +42,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./registrationform.js"></script>
+    <script src="./esericio1.js"></script>
   </body>
 </html>
